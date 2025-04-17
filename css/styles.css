@@ -27,6 +27,11 @@ a{
     color: inherit;
 }
 
+a:hover{
+    text-decoration: underline;
+    color: rgb(33, 9, 241);
+}
+
 input, button, textarea, select{
     font-size: inherit;
     font-family: inherit;
@@ -74,6 +79,11 @@ input, button, textarea, select{
     justify-content: center;
 
     position: relative;
+
+    
+    font-size: 16px;
+    line-height: 1.4;
+    font-weight: 500;
 }
 
 .phone__number::before{
@@ -146,4 +156,21 @@ input, button, textarea, select{
     border-radius: 50%;
     top: 8px;
     left: -22px;
+}
+
+.education{
+    margin-top: 28px;
+
+    display: flex;
+    gap: 18px;
+    align-items: center;
+
+    
+    font-size: 16px;
+    line-height: 1.4;
+    font-weight: 500;
+}
+
+.degree{
+    font-weight: 700;
 }
