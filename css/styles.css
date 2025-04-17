@@ -212,3 +212,57 @@ input, button, textarea, select{
     
     padding: 30px 24px;
 }
+
+/*==== Css Form ====*/
+
+.contain__form{
+    padding: 40px 0;
+    width: 366px;
+    border: 1px solid #000;
+    border-radius: 10px;
+    background: #23ceb8;
+}
+
+.form{
+    margin-top: 42px;
+    padding: 0 84px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.form__label{
+    margin-top: 14px;
+    display: flex;
+    flex-direction: column;
+}
+
+.form__text, .form__input{
+    font-size: 16px;
+    line-height: 1.4;
+    font-weight: 400;
+}
+
+.form__input{
+    margin-top: 4px;
+    outline: none;
+    border-radius: 6px;
+
+    padding: 4px 4px;
+}
+
+.gender{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.button{
+    margin-top: 40px;
+    width: 192px;
+    height: 40px;
+    background: #ffc52a;
+    border: none;
+    border-radius: 20px;
+}
