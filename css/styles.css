@@ -145,6 +145,7 @@ input, button, textarea, select{
     line-height: 1.4;
     font-weight: 500;
     margin-left: 22px;
+    text-align: justify;
 }
 
 .item::after{
