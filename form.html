@@ -12,10 +12,11 @@
     <body>
         <div class="contain contain__form">
             <h1 class="heading heading__form">Register</h1>
-            <form action="" class="form">
+            <form action="" class="form" autocomplete="off">
                 <label class="form__label">
-                    <span class="form__text">Name</span>
+                    <span class="form__text">Display Name</span>
                     <input
+                        spellcheck="false"
                         type="text"
                         class="form__input"
                         required
@@ -25,10 +26,21 @@
                 <label class="form__label">
                     <span class="form__text">Email</span>
                     <input
+                        spellcheck="false"
                         type="email"
                         class="form__input"
                         required
                         placeholder="Email"
+                    />
+                </label>
+                <label class="form__label">
+                    <span class="form__text">Phone</span>
+                    <input
+                        spellcheck="false"
+                        type="tel"
+                        class="form__input"
+                        required
+                        placeholder="Phone Number"
                     />
                 </label>
                 <label class="form__label">
@@ -64,6 +76,15 @@
                     </label>
                 </div>
                 <label class="form__label">
+                    <span class="form__text">Date of Birth</span>
+                    <input
+                        type="date"
+                        class="form__input"
+                        required
+                        placeholder="Date of Birth"
+                    />
+                </label>
+                <label class="form__label">
                     <span class="form__text">Address</span>
                     <input
                         type="text"
@@ -72,6 +93,37 @@
                         placeholder="Address"
                     />
                 </label>
+                <label class="form__label">
+                    <img
+                        class="avatar__img"
+                        src="./img/avatar.jpg"
+                        alt="Avatar Placeholder"
+                    />
+                    <input
+                        hidden
+                        type="file"
+                        class="form__input"
+                        accept="image/*"
+                        required
+                    />
+                </label>
+                <div class="type__email">
+                    <p class="title__email">Communication Preferences</p>
+                    <label class="form__label type__email--label">
+                        <input type="checkbox" name="gender" />
+                        <span class="form__text">Subscribe to Newsletter</span>
+                    </label>
+                    <label class="form__label type__email--label">
+                        <input type="checkbox" name="gender" />
+                        <span class="form__text"
+                            >Receive Promotional Emails</span
+                        >
+                    </label>
+                    <label class="form__label type__email--label">
+                        <input type="checkbox" name="gender" />
+                        <span class="form__text">Get Product Updates </span>
+                    </label>
+                </div>
 
                 <button class="button">Create Account</button>
             </form>
